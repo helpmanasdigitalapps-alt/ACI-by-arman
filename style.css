@@ -920,6 +920,151 @@ width: 100%;
     .copyright {
         grid-column: span 2;
     }
+
+    /* ADMISSION FORM */
+
+.admission-form-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+    padding: 50px 8%;
+   background: linear-gradient(135deg, #000000, #02050a);
+       border-top: 1px solid #123c63;
+    border-bottom: 1px solid #123c63;
+}
+
+.admission-form-info h2 {
+    font-size: 32px;
+    line-height: 1.3;
+    margin: 15px 0;
+}
+
+.admission-form-info h2 span {
+    display: block;
+    color: #16baff;
+}
+
+.admission-form-info p {
+    color: #b6c6dc;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.form-tag {
+    display: inline-block;
+    padding: 6px 13px;
+    color: #29d8ff;
+    background: #082c4b;
+    border: 1px solid #126da1;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.form-feature {
+    margin: 13px 0;
+    color: #dceaff;
+    font-size: 13px;
+}
+
+.form-feature span {
+    color: #23d9b0;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.admission-form-box {
+    padding: 25px;
+    background: #030914;
+    border: 1px solid #17649a;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #008cff15;
+}
+
+.admission-form-box h3 {
+    font-size: 23px;
+    margin-bottom: 4px;
+}
+
+.form-subtitle {
+    color: #9db3cd;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.admission-form-box label {
+    display: block;
+    color: #dceaff;
+    font-size: 12px;
+    margin: 13px 0 6px;
+}
+
+.admission-form-box input,
+.admission-form-box select,
+.admission-form-box textarea {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    background: #020b19;
+    border: 1px solid #234769;
+    border-radius: 7px;
+    outline: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.admission-form-box input:focus,
+.admission-form-box select:focus,
+.admission-form-box textarea:focus {
+    border-color: #16baff;
+    box-shadow: 0 0 7px #16baff35;
+}
+
+.admission-form-box select option {
+    background: #071629;
+    color: white;
+}
+
+.admission-form-box textarea {
+    resize: vertical;
+}
+
+.form-submit-btn {
+    width: 100%;
+    margin-top: 18px;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+background: linear-gradient(110deg, #008cff, #6440ff);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-submit-btn:hover {
+    opacity: 0.88;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 650px) {
+    .admission-form-section {
+        grid-template-columns: 1fr;
+        padding: 30px 5%;
+        gap: 22px;
+    }
+
+    .admission-form-info h2 {
+        font-size: 27px;
+    }
+
+    .admission-form-box {
+        padding: 20px;
+    }
+        }
+    
 }
 
 /* ACCESSIBILITY, POLISH & RESPONSIVE IMPROVEMENTS */
@@ -1203,147 +1348,3 @@ section[id] { scroll-margin-top: 20px; }
         transition-duration: .01ms !important;
     }
 }
-/* ADMISSION FORM */
-
-.admission-form-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
-    align-items: center;
-    padding: 50px 8%;
-   background: linear-gradient(135deg, #000000, #02050a);
-       border-top: 1px solid #123c63;
-    border-bottom: 1px solid #123c63;
-}
-
-.admission-form-info h2 {
-    font-size: 32px;
-    line-height: 1.3;
-    margin: 15px 0;
-}
-
-.admission-form-info h2 span {
-    display: block;
-    color: #16baff;
-}
-
-.admission-form-info p {
-    color: #b6c6dc;
-    margin-bottom: 20px;
-    font-size: 14px;
-}
-
-.form-tag {
-    display: inline-block;
-    padding: 6px 13px;
-    color: #29d8ff;
-    background: #082c4b;
-    border: 1px solid #126da1;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-.form-feature {
-    margin: 13px 0;
-    color: #dceaff;
-    font-size: 13px;
-}
-
-.form-feature span {
-    color: #23d9b0;
-    margin-right: 8px;
-    font-weight: bold;
-}
-
-.admission-form-box {
-    padding: 25px;
-    background: #030914;
-    border: 1px solid #17649a;
-    border-radius: 15px;
-    box-shadow: 0 0 25px #008cff15;
-}
-
-.admission-form-box h3 {
-    font-size: 23px;
-    margin-bottom: 4px;
-}
-
-.form-subtitle {
-    color: #9db3cd;
-    font-size: 12px;
-    margin-bottom: 20px;
-}
-
-.admission-form-box label {
-    display: block;
-    color: #dceaff;
-    font-size: 12px;
-    margin: 13px 0 6px;
-}
-
-.admission-form-box input,
-.admission-form-box select,
-.admission-form-box textarea {
-    width: 100%;
-    padding: 12px;
-    color: white;
-    background: #020b19;
-    border: 1px solid #234769;
-    border-radius: 7px;
-    outline: none;
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-}
-
-.admission-form-box input:focus,
-.admission-form-box select:focus,
-.admission-form-box textarea:focus {
-    border-color: #16baff;
-    box-shadow: 0 0 7px #16baff35;
-}
-
-.admission-form-box select option {
-    background: #071629;
-    color: white;
-}
-
-.admission-form-box textarea {
-    resize: vertical;
-}
-
-.form-submit-btn {
-    width: 100%;
-    margin-top: 18px;
-    padding: 13px;
-    border: none;
-    border-radius: 7px;
-background: linear-gradient(110deg, #008cff, #6440ff);
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.form-submit-btn:hover {
-    opacity: 0.88;
-}
-
-/* MOBILE RESPONSIVE */
-
-@media (max-width: 650px) {
-    .admission-form-section {
-        grid-template-columns: 1fr;
-        padding: 30px 5%;
-        gap: 22px;
-    }
-
-    .admission-form-info h2 {
-        font-size: 27px;
-    }
-
-    .admission-form-box {
-        padding: 20px;
-    }
-    }
-
